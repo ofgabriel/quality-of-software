@@ -1,0 +1,58 @@
+{
+  "generator-jhipster": {
+    "skipJhipsterDependencies": true,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-agilekip",
+        "version": "0.0.12"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-agilekip",
+        "version": "0.0.12"
+      }
+    ],
+    "applicationType": "monolith",
+    "baseName": "pp",
+    "jhipsterVersion": "7.0.1",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "testFrameworks": [],
+    "pages": [],
+    "creationTimestamp": 1644331922996,
+    "serviceDiscoveryType": false,
+    "reactive": false,
+    "authenticationType": "jwt",
+    "packageName": "com.ufrj.pp",
+    "serverPort": "8080",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "buildTool": "maven",
+    "serverSideOptions": [],
+    "websocket": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "enableSwaggerCodegen": false,
+    "clientFramework": "vue",
+    "withAdminUi": true,
+    "clientTheme": "none",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/ufrj/pp",
+    "jwtSecretKey": "ZGVhYTFjMzcwNzMzOTA0Yjg2NmZhNjkxYjAxZWY3MTg5NTdkZTY0ZDRhZmM1ZmE0MWM3YThiNjY0M2QwYmI3NmJhNGUwYTBiOTI1ZTc4ODQzZjc5NDcxYjRiZWNiNWE0ZDE0MTZlY2ZhYjU2MzU3ZmJhYzUxMDc1YmIzYjc3OTU=",
+    "clientPackageManager": "npm",
+    "clientThemeVariant": "",
+    "languages": ["en"],
+    "entities": ["Suit"]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "fields": [
+    {
+      "fieldName": "suitNumber",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": true,
+  "pagination": "no",
+  "name": "Suit",
+  "changelogDate": "20220208105900",
+  "skipFakeData": true
+}

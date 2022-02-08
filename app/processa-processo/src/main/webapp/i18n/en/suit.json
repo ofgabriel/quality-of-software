@@ -1,0 +1,16 @@
+{
+  "ppApp": {
+    "suit": {
+      "home": {
+        "title": "Suits",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Suits found"
+      },
+      "detail": {
+        "title": "Suit"
+      },
+      "id": "ID",
+      "suitNumber": "Suit Number"
+    }
+  }
+}
