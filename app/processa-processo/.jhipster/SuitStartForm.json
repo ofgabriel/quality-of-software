@@ -1,0 +1,21 @@
+{
+  "fields": [
+    {
+      "fieldName": "suitNumber",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "suit_monitoring",
+  "processEntityName": "SuitProcess",
+  "domainEntityName": "Suit",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "SuitStartForm",
+  "changelogDate": "20220210163000",
+  "skipFakeData": true
+}

@@ -1,0 +1,24 @@
+{
+  "ppApp": {
+    "suitStartForm": {
+      "home": {
+        "title": "Suit Start Forms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Suit Start Form",
+        "createOrEditLabel": "Create or edit a Suit Start Form",
+        "notFound": "No Suit Start Forms found"
+      },
+      "created": "A new Suit Start Form is created with identifier {{ param }}",
+      "updated": "A Suit Start Form is updated with identifier {{ param }}",
+      "deleted": "A Suit Start Form is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Suit Start Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Suit Start Form"
+      },
+      "id": "ID",
+      "suitNumber": "Suit Number"
+    }
+  }
+}

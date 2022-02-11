@@ -10,7 +10,16 @@
         "title": "Suit"
       },
       "id": "ID",
-      "suitNumber": "Suit Number"
+      "suitNumber": "Suit Number",
+      "name": "Name",
+      "date": "Date",
+      "claimed": "Claimed",
+      "lawyer": "Lawyer",
+      "court": "Court",
+      "value": "Value",
+      "shouldGroup": "Should Group",
+      "watcher": "Watcher",
+      "group": "Group"
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "fieldName": "suitNumber",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "process-binding",
+  "processBpmnId": "suit_monitoring",
+  "domainEntityName": "Suit",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "SuitProcess",
+  "changelogDate": "20220210094600",
+  "skipFakeData": true
+}

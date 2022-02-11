@@ -1,0 +1,25 @@
+{
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "group",
+      "relationshipName": "group",
+      "relationshipValidateRules": ["required"],
+      "otherEntityField": "name"
+    }
+  ],
+  "entityType": "user-task-form",
+  "processBpmnId": "suit_monitoring",
+  "processEntityName": "SuitProcess",
+  "taskBpmnId": "suit_grouping",
+  "domainEntityName": "Suit",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskGroupDefinition",
+  "changelogDate": "20220211002651"
+}

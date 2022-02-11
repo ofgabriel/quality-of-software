@@ -1,0 +1,16 @@
+{
+  "ppApp": {
+    "lawyer": {
+      "home": {
+        "title": "Lawyers",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Lawyers found"
+      },
+      "detail": {
+        "title": "Lawyer"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

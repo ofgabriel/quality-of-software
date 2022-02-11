@@ -16,7 +16,18 @@
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220208105900_added_entity_Suit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220208105900_added_entity_Lawyer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220210094600_added_entity_SuitProcess.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220210163000_added_entity_SuitStartForm.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220210223446_added_entity_TaskSuitRegistering.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220210223446_added_entity_TaskWatcherDefinition.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220210235739_added_entity_TaskDisplayDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220211002650_added_entity_Group.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220211002651_added_entity_TaskGroupDefinition.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20220208105900_added_entity_constraints_Suit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220210223446_added_entity_constraints_TaskWatcherDefinition.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220211002651_added_entity_constraints_TaskGroupDefinition.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

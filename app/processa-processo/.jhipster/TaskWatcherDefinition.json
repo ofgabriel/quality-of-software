@@ -1,0 +1,25 @@
+{
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "lawyer",
+      "relationshipName": "watcher",
+      "relationshipValidateRules": ["required"],
+      "otherEntityField": "name"
+    }
+  ],
+  "entityType": "user-task-form",
+  "processBpmnId": "suit_monitoring",
+  "processEntityName": "SuitProcess",
+  "taskBpmnId": "watcher_definition",
+  "domainEntityName": "Suit",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskWatcherDefinition",
+  "changelogDate": "20220210223446"
+}

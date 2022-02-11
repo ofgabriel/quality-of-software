@@ -13,6 +13,14 @@
         "taskInstance": "All Tasks",
         "myCandidateTasks": "My Tasks",
         "suit": "Suit",
+        "suitProcess": "Suit Process",
+        "lawyer": "Lawyer",
+        "suitStartForm": "Suit Start Form",
+        "taskSuitRegistering": "Task Suit Registering",
+        "taskWatcherDefinition": "Task Watcher Definition",
+        "taskDisplayDetails": "Task Display Details",
+        "group": "Group",
+        "taskGroupDefinition": "Task Group Definition",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

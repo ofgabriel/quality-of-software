@@ -1,0 +1,30 @@
+{
+  "ppApp": {
+    "taskSuitRegistering": {
+      "home": {
+        "title": "Task Suit Registerings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Suit Registering",
+        "createOrEditLabel": "Create or edit a Task Suit Registering",
+        "notFound": "No Task Suit Registerings found"
+      },
+      "created": "A new Task Suit Registering is created with identifier {{ param }}",
+      "updated": "A Task Suit Registering is updated with identifier {{ param }}",
+      "deleted": "A Task Suit Registering is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Suit Registering {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Suit Registering"
+      },
+      "id": "ID",
+      "suitNumber": "Suit Number",
+      "name": "Name",
+      "date": "Date",
+      "claimed": "Claimed",
+      "lawyer": "Lawyer",
+      "court": "Court",
+      "value": "Value"
+    }
+  }
+}

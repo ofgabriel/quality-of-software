@@ -32,6 +32,9 @@ import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
 import SuitService from '@/entities/suit/suit.service';
+import SuitProcessService from '@/entities/suit-process/suit-process.service';
+import LawyerService from '@/entities/lawyer/lawyer.service';
+import GroupService from '@/entities/group/group.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -96,6 +99,9 @@ new Vue({
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
     suitService: () => new SuitService(),
+    suitProcessService: () => new SuitProcessService(),
+    lawyerService: () => new LawyerService(),
+    groupService: () => new GroupService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

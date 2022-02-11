@@ -1,0 +1,46 @@
+{
+  "fields": [
+    {
+      "fieldName": "suitNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "claimed",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lawyer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "court",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "suit_monitoring",
+  "processEntityName": "SuitProcess",
+  "taskBpmnId": "suit_registering",
+  "domainEntityName": "Suit",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskSuitRegistering",
+  "changelogDate": "20220210223446"
+}

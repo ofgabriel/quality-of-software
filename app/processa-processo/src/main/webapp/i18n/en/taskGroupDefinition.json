@@ -1,0 +1,24 @@
+{
+  "ppApp": {
+    "taskGroupDefinition": {
+      "home": {
+        "title": "Task Group Definitions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Group Definition",
+        "createOrEditLabel": "Create or edit a Task Group Definition",
+        "notFound": "No Task Group Definitions found"
+      },
+      "created": "A new Task Group Definition is created with identifier {{ param }}",
+      "updated": "A Task Group Definition is updated with identifier {{ param }}",
+      "deleted": "A Task Group Definition is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Group Definition {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Group Definition"
+      },
+      "id": "ID",
+      "group": "Group"
+    }
+  }
+}

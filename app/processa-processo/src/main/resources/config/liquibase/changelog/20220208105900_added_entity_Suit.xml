@@ -17,6 +17,33 @@
             <column name="suit_number" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="claimed" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lawyer" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="court" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="value" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="should_group" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="watcher_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="group_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
     </changeSet>

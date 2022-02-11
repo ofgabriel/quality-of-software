@@ -19,6 +19,15 @@
           <tr>
             <th scope="row"><span v-text="$t('global.field.id')">ID</span></th>
             <th scope="row"><span v-text="$t('ppApp.suit.suitNumber')">Suit Number</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.name')">Name</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.date')">Date</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.claimed')">Claimed</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.lawyer')">Lawyer</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.court')">Court</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.value')">Value</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.shouldGroup')">Should Group</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.watcher')">Watcher</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.group')">Group</span></th>
             <th scope="row"></th>
           </tr>
         </thead>
@@ -28,6 +37,23 @@
               <router-link :to="{ name: 'SuitView', params: { suitId: suit.id } }">{{ suit.id }}</router-link>
             </td>
             <td>{{ suit.suitNumber }}</td>
+            <td>{{ suit.name }}</td>
+            <td>{{ suit.date }}</td>
+            <td>{{ suit.claimed }}</td>
+            <td>{{ suit.lawyer }}</td>
+            <td>{{ suit.court }}</td>
+            <td>{{ suit.value }}</td>
+            <td>{{ suit.shouldGroup }}</td>
+            <td>
+              <div v-if="suit.watcher">
+                <router-link :to="{ name: 'LawyerView', params: { LawyerId: suit.watcher.id } }">{{ suit.watcher.name }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="suit.group">
+                <router-link :to="{ name: 'GroupView', params: { GroupId: suit.group.id } }">{{ suit.group.name }}</router-link>
+              </div>
+            </td>
             <td class="text-right">
               <div class="btn-group">
                 <router-link :to="{ name: 'SuitView', params: { suitId: suit.id } }" custom v-slot="{ navigate }">

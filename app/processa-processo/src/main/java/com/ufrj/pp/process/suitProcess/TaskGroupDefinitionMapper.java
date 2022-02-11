@@ -1,0 +1,28 @@
+package com.ufrj.pp.process.suitProcess;
+
+import com.ufrj.pp.domain.Group;
+import com.ufrj.pp.domain.Suit;
+import com.ufrj.pp.domain.SuitProcess;
+import com.ufrj.pp.service.dto.GroupDTO;
+import com.ufrj.pp.service.dto.SuitDTO;
+import com.ufrj.pp.service.dto.SuitProcessDTO;
+import org.akip.service.mapper.ProcessInstanceMapper;
+import org.mapstruct.BeanMapping;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+@Mapper(componentModel = "spring", uses = { ProcessInstanceMapper.class })
+public interface TaskGroupDefinitionMapper {
+    @Mapping(target = "processInstance", source = "processInstance", qualifiedByName = "loadTaskContext")
+    SuitProcessDTO toSuitProcessDTO(SuitProcess suitProcess);
+
+    @BeanMapping(ignoreByDefault = true)
+    @Mapping(target = "id", source = "id")
+    @Mapping(target = "group", source = "group")
+    SuitDTO toSuitDTO(Suit suit);
+
+    @BeanMapping(ignoreByDefault = true)
+    @Mapping(target = "id", source = "id")
+    @Mapping(target = "name", source = "name")
+    GroupDTO toGroupDTO(Group name);
+}

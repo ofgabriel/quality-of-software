@@ -1,6 +1,7 @@
 package com.ufrj.pp.domain;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import javax.persistence.*;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
@@ -22,6 +23,33 @@ public class Suit implements Serializable {
 
     @Column(name = "suit_number")
     private String suitNumber;
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "date")
+    private LocalDate date;
+
+    @Column(name = "claimed")
+    private String claimed;
+
+    @Column(name = "lawyer")
+    private String lawyer;
+
+    @Column(name = "court")
+    private String court;
+
+    @Column(name = "value")
+    private String value;
+
+    @Column(name = "should_group")
+    private Boolean shouldGroup;
+
+    @ManyToOne
+    private Lawyer watcher;
+
+    @ManyToOne
+    private Group group;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
@@ -50,6 +78,123 @@ public class Suit implements Serializable {
         this.suitNumber = suitNumber;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public Suit name(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public LocalDate getDate() {
+        return this.date;
+    }
+
+    public Suit date(LocalDate date) {
+        this.date = date;
+        return this;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public String getClaimed() {
+        return this.claimed;
+    }
+
+    public Suit claimed(String claimed) {
+        this.claimed = claimed;
+        return this;
+    }
+
+    public void setClaimed(String claimed) {
+        this.claimed = claimed;
+    }
+
+    public String getLawyer() {
+        return this.lawyer;
+    }
+
+    public Suit lawyer(String lawyer) {
+        this.lawyer = lawyer;
+        return this;
+    }
+
+    public void setLawyer(String lawyer) {
+        this.lawyer = lawyer;
+    }
+
+    public String getCourt() {
+        return this.court;
+    }
+
+    public Suit court(String court) {
+        this.court = court;
+        return this;
+    }
+
+    public void setCourt(String court) {
+        this.court = court;
+    }
+
+    public String getValue() {
+        return this.value;
+    }
+
+    public Suit value(String value) {
+        this.value = value;
+        return this;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public Boolean getShouldGroup() {
+        return this.shouldGroup;
+    }
+
+    public Suit shouldGroup(Boolean shouldGroup) {
+        this.shouldGroup = shouldGroup;
+        return this;
+    }
+
+    public void setShouldGroup(Boolean shouldGroup) {
+        this.shouldGroup = shouldGroup;
+    }
+
+    public Lawyer getWatcher() {
+        return this.watcher;
+    }
+
+    public Suit watcher(Lawyer Lawyer) {
+        this.setWatcher(Lawyer);
+        return this;
+    }
+
+    public void setWatcher(Lawyer Lawyer) {
+        this.watcher = Lawyer;
+    }
+
+    public Group getGroup() {
+        return this.group;
+    }
+
+    public Suit group(Group Group) {
+        this.setGroup(Group);
+        return this;
+    }
+
+    public void setGroup(Group Group) {
+        this.group = Group;
+    }
+
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
     @Override
@@ -75,6 +220,13 @@ public class Suit implements Serializable {
         return "Suit{" +
             "id=" + getId() +
             ", suitNumber='" + getSuitNumber() + "'" +
+            ", name='" + getName() + "'" +
+            ", date='" + getDate() + "'" +
+            ", claimed='" + getClaimed() + "'" +
+            ", lawyer='" + getLawyer() + "'" +
+            ", court='" + getCourt() + "'" +
+            ", value='" + getValue() + "'" +
+            ", shouldGroup='" + getShouldGroup() + "'" +
             "}";
     }
 }

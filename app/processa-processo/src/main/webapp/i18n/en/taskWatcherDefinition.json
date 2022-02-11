@@ -1,0 +1,24 @@
+{
+  "ppApp": {
+    "taskWatcherDefinition": {
+      "home": {
+        "title": "Task Watcher Definitions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Watcher Definition",
+        "createOrEditLabel": "Create or edit a Task Watcher Definition",
+        "notFound": "No Task Watcher Definitions found"
+      },
+      "created": "A new Task Watcher Definition is created with identifier {{ param }}",
+      "updated": "A Task Watcher Definition is updated with identifier {{ param }}",
+      "deleted": "A Task Watcher Definition is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Watcher Definition {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Watcher Definition"
+      },
+      "id": "ID",
+      "watcher": "Watcher"
+    }
+  }
+}

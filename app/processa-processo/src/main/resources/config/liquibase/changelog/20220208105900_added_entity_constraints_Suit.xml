@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity Suit.
+    -->
+    <changeSet id="20220208105900-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="watcher_id"
+                                 baseTableName="suit"
+                                 constraintName="fk_suit__watcher_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="lawyer"/>
+
+        <addForeignKeyConstraint baseColumnNames="group_id"
+                                 baseTableName="suit"
+                                 constraintName="fk_suit__group_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_group"/>
+    </changeSet>
+</databaseChangeLog>

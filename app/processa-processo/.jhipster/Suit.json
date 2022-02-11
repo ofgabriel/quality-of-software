@@ -3,9 +3,50 @@
     {
       "fieldName": "suitNumber",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "claimed",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lawyer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "court",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shouldGroup",
+      "fieldType": "Boolean"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipName": "watcher",
+      "otherEntityName": "Lawyer",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipName": "group",
+      "otherEntityName": "Group",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
+    }
+  ],
   "entityType": "domain",
   "service": "serviceClass",
   "dto": "mapstruct",

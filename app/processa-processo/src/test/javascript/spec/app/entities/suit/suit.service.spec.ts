@@ -1,7 +1,9 @@
 /* tslint:disable max-line-length */
 import axios from 'axios';
 import sinon from 'sinon';
+import dayjs from 'dayjs';
 
+import { DATE_FORMAT } from '@/shared/date/filters';
 import SuitService from '@/entities/suit/suit.service';
 import { Suit } from '@/shared/model/suit.model';
 
@@ -26,15 +28,22 @@ describe('Service Tests', () => {
   describe('Suit Service', () => {
     let service: SuitService;
     let elemDefault;
+    let currentDate: Date;
 
     beforeEach(() => {
       service = new SuitService();
-      elemDefault = new Suit(0, 'AAAAAAA');
+      currentDate = new Date();
+      elemDefault = new Suit(0, 'AAAAAAA', 'AAAAAAA', currentDate, 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', false);
     });
 
     describe('Service methods', () => {
       it('should find an element', async () => {
-        const returnedFromService = Object.assign({}, elemDefault);
+        const returnedFromService = Object.assign(
+          {
+            date: dayjs(currentDate).format(DATE_FORMAT),
+          },
+          elemDefault
+        );
         axiosStub.get.resolves({ data: returnedFromService });
 
         return service.find(123).then(res => {
@@ -56,10 +65,22 @@ describe('Service Tests', () => {
         const returnedFromService = Object.assign(
           {
             suitNumber: 'BBBBBB',
+            name: 'BBBBBB',
+            date: dayjs(currentDate).format(DATE_FORMAT),
+            claimed: 'BBBBBB',
+            lawyer: 'BBBBBB',
+            court: 'BBBBBB',
+            value: 'BBBBBB',
+            shouldGroup: true,
           },
           elemDefault
         );
-        const expected = Object.assign({}, returnedFromService);
+        const expected = Object.assign(
+          {
+            date: currentDate,
+          },
+          returnedFromService
+        );
         axiosStub.get.resolves([returnedFromService]);
         return service.retrieve().then(res => {
           expect(res).toContainEqual(expected);

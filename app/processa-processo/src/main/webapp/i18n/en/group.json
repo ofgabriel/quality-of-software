@@ -1,0 +1,16 @@
+{
+  "ppApp": {
+    "group": {
+      "home": {
+        "title": "Groups",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Groups found"
+      },
+      "detail": {
+        "title": "Group"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

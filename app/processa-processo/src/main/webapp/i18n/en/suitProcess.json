@@ -1,0 +1,24 @@
+{
+  "ppApp": {
+    "suitProcess": {
+      "home": {
+        "title": "Suit Processes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Suit Process",
+        "createOrEditLabel": "Create or edit a Suit Process",
+        "notFound": "No Suit Processes found"
+      },
+      "created": "A new Suit Process is created with identifier {{ param }}",
+      "updated": "A Suit Process is updated with identifier {{ param }}",
+      "deleted": "A Suit Process is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Suit Process {{ id }}?"
+      },
+      "detail": {
+        "title": "Suit Process"
+      },
+      "id": "ID",
+      "suitNumber": "Suit Number"
+    }
+  }
+}

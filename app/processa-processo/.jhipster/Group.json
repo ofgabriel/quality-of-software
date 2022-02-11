@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": true,
+  "pagination": "no",
+  "name": "Group",
+  "skipFakeData": true,
+  "entityTableName": "jhi_group",
+  "changelogDate": "20220211002650"
+}
