@@ -12,6 +12,7 @@ const validations: any = {
   taskContext: {
     suitProcess: {
       suit: {
+        shouldReceiveNotification: {},
         watcher: {
           required,
         },

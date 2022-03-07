@@ -45,6 +45,9 @@ public class Suit implements Serializable {
     @Column(name = "should_group")
     private Boolean shouldGroup;
 
+    @Column(name = "should_receive_notification")
+    private Boolean shouldReceiveNotification;
+
     @ManyToOne
     private Lawyer watcher;
 
@@ -169,6 +172,19 @@ public class Suit implements Serializable {
         this.shouldGroup = shouldGroup;
     }
 
+    public Boolean getShouldReceiveNotification() {
+        return this.shouldReceiveNotification;
+    }
+
+    public Suit shouldReceiveNotification(Boolean shouldReceiveNotification) {
+        this.shouldReceiveNotification = shouldReceiveNotification;
+        return this;
+    }
+
+    public void setShouldReceiveNotification(Boolean shouldReceiveNotification) {
+        this.shouldReceiveNotification = shouldReceiveNotification;
+    }
+
     public Lawyer getWatcher() {
         return this.watcher;
     }
@@ -227,6 +243,7 @@ public class Suit implements Serializable {
             ", court='" + getCourt() + "'" +
             ", value='" + getValue() + "'" +
             ", shouldGroup='" + getShouldGroup() + "'" +
+            ", shouldReceiveNotification='" + getShouldReceiveNotification() + "'" +
             "}";
     }
 }

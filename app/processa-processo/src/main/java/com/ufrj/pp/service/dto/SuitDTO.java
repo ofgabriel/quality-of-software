@@ -27,6 +27,8 @@ public class SuitDTO implements Serializable {
 
     private Boolean shouldGroup;
 
+    private Boolean shouldReceiveNotification;
+
     private LawyerDTO watcher;
 
     private GroupDTO group;
@@ -103,6 +105,14 @@ public class SuitDTO implements Serializable {
         this.shouldGroup = shouldGroup;
     }
 
+    public Boolean getShouldReceiveNotification() {
+        return shouldReceiveNotification;
+    }
+
+    public void setShouldReceiveNotification(Boolean shouldReceiveNotification) {
+        this.shouldReceiveNotification = shouldReceiveNotification;
+    }
+
     public LawyerDTO getWatcher() {
         return watcher;
     }
@@ -153,6 +163,7 @@ public class SuitDTO implements Serializable {
             ", court='" + getCourt() + "'" +
             ", value='" + getValue() + "'" +
             ", shouldGroup='" + getShouldGroup() + "'" +
+            ", shouldReceiveNotification='" + getShouldReceiveNotification() + "'" +
             ", watcher=" + getWatcher() +
             ", group=" + getGroup() +
             "}";

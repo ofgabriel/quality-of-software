@@ -9,6 +9,26 @@
           <template v-slot:body>
             <hr />
             <div class="form-group">
+              <label
+                class="form-control-label"
+                v-text="$t('ppApp.taskWatcherDefinition.shouldReceiveNotification')"
+                for="task-watcher-definition-shouldReceiveNotification"
+                >Should Receive Notification</label
+              >
+              <input
+                type="checkbox"
+                class="form-check"
+                name="shouldReceiveNotification"
+                id="task-watcher-definition-shouldReceiveNotification"
+                data-cy="shouldReceiveNotification"
+                :class="{
+                  valid: !$v.taskContext.suitProcess.suit.shouldReceiveNotification.$invalid,
+                  invalid: $v.taskContext.suitProcess.suit.shouldReceiveNotification.$invalid,
+                }"
+                v-model="$v.taskContext.suitProcess.suit.shouldReceiveNotification.$model"
+              />
+            </div>
+            <div class="form-group">
               <label class="form-control-label" v-text="$t('ppApp.taskWatcherDefinition.watcher')" for="task-watcher-definition-watcher"
                 >Watcher</label
               >

@@ -31,6 +31,10 @@
     {
       "fieldName": "shouldGroup",
       "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "shouldReceiveNotification",
+      "fieldType": "Boolean"
     }
   ],
   "relationships": [

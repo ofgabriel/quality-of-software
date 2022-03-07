@@ -26,6 +26,7 @@
             <th scope="row"><span v-text="$t('ppApp.suit.court')">Court</span></th>
             <th scope="row"><span v-text="$t('ppApp.suit.value')">Value</span></th>
             <th scope="row"><span v-text="$t('ppApp.suit.shouldGroup')">Should Group</span></th>
+            <th scope="row"><span v-text="$t('ppApp.suit.shouldReceiveNotification')">Should Receive Notification</span></th>
             <th scope="row"><span v-text="$t('ppApp.suit.watcher')">Watcher</span></th>
             <th scope="row"><span v-text="$t('ppApp.suit.group')">Group</span></th>
             <th scope="row"></th>
@@ -44,6 +45,7 @@
             <td>{{ suit.court }}</td>
             <td>{{ suit.value }}</td>
             <td>{{ suit.shouldGroup }}</td>
+            <td>{{ suit.shouldReceiveNotification }}</td>
             <td>
               <div v-if="suit.watcher">
                 <router-link :to="{ name: 'LawyerView', params: { LawyerId: suit.watcher.id } }">{{ suit.watcher.name }}</router-link>

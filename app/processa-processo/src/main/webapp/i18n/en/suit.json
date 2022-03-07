@@ -18,6 +18,7 @@
       "court": "Court",
       "value": "Value",
       "shouldGroup": "Should Group",
+      "shouldReceiveNotification": "Should Receive Notification",
       "watcher": "Watcher",
       "group": "Group"
     }

@@ -71,6 +71,7 @@ public class TaskWatcherDefinitionService {
 
     public void save(TaskWatcherDefinitionContextDTO taskWatcherDefinitionContext) {
         SuitDTO suitDTO = suitService.findOne(taskWatcherDefinitionContext.getSuitProcess().getSuit().getId()).orElseThrow();
+        suitDTO.setShouldReceiveNotification(taskWatcherDefinitionContext.getSuitProcess().getSuit().getShouldReceiveNotification());
         suitDTO.setWatcher(taskWatcherDefinitionContext.getSuitProcess().getSuit().getWatcher());
         suitService.save(suitDTO);
     }

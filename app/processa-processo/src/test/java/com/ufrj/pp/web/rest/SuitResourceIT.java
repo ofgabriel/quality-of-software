@@ -57,6 +57,9 @@ class SuitResourceIT {
     private static final Boolean DEFAULT_SHOULD_GROUP = false;
     private static final Boolean UPDATED_SHOULD_GROUP = true;
 
+    private static final Boolean DEFAULT_SHOULD_RECEIVE_NOTIFICATION = false;
+    private static final Boolean UPDATED_SHOULD_RECEIVE_NOTIFICATION = true;
+
     private static final String ENTITY_API_URL = "/api/suits";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -92,7 +95,8 @@ class SuitResourceIT {
             .lawyer(DEFAULT_LAWYER)
             .court(DEFAULT_COURT)
             .value(DEFAULT_VALUE)
-            .shouldGroup(DEFAULT_SHOULD_GROUP);
+            .shouldGroup(DEFAULT_SHOULD_GROUP)
+            .shouldReceiveNotification(DEFAULT_SHOULD_RECEIVE_NOTIFICATION);
         return suit;
     }
 
@@ -111,7 +115,8 @@ class SuitResourceIT {
             .lawyer(UPDATED_LAWYER)
             .court(UPDATED_COURT)
             .value(UPDATED_VALUE)
-            .shouldGroup(UPDATED_SHOULD_GROUP);
+            .shouldGroup(UPDATED_SHOULD_GROUP)
+            .shouldReceiveNotification(UPDATED_SHOULD_RECEIVE_NOTIFICATION);
         return suit;
     }
 
@@ -139,7 +144,8 @@ class SuitResourceIT {
             .andExpect(jsonPath("$.[*].lawyer").value(hasItem(DEFAULT_LAWYER)))
             .andExpect(jsonPath("$.[*].court").value(hasItem(DEFAULT_COURT)))
             .andExpect(jsonPath("$.[*].value").value(hasItem(DEFAULT_VALUE)))
-            .andExpect(jsonPath("$.[*].shouldGroup").value(hasItem(DEFAULT_SHOULD_GROUP.booleanValue())));
+            .andExpect(jsonPath("$.[*].shouldGroup").value(hasItem(DEFAULT_SHOULD_GROUP.booleanValue())))
+            .andExpect(jsonPath("$.[*].shouldReceiveNotification").value(hasItem(DEFAULT_SHOULD_RECEIVE_NOTIFICATION.booleanValue())));
     }
 
     @Test
@@ -161,7 +167,8 @@ class SuitResourceIT {
             .andExpect(jsonPath("$.lawyer").value(DEFAULT_LAWYER))
             .andExpect(jsonPath("$.court").value(DEFAULT_COURT))
             .andExpect(jsonPath("$.value").value(DEFAULT_VALUE))
-            .andExpect(jsonPath("$.shouldGroup").value(DEFAULT_SHOULD_GROUP.booleanValue()));
+            .andExpect(jsonPath("$.shouldGroup").value(DEFAULT_SHOULD_GROUP.booleanValue()))
+            .andExpect(jsonPath("$.shouldReceiveNotification").value(DEFAULT_SHOULD_RECEIVE_NOTIFICATION.booleanValue()));
     }
 
     @Test

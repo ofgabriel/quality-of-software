@@ -9,6 +9,20 @@
           <template v-slot:body>
             <hr />
             <div class="form-group">
+              <label class="form-control-label" v-text="$t('ppApp.taskWatcherDefinition.shouldReceiveNotification')"
+                >shouldReceiveNotification</label
+              >
+              <input
+                readonly
+                type="text"
+                class="form-control"
+                name="shouldReceiveNotification"
+                id="suit-shouldReceiveNotification"
+                data-cy="shouldReceiveNotification"
+                v-model="taskContext.suitProcess.suit.shouldReceiveNotification"
+              />
+            </div>
+            <div class="form-group">
               <label class="form-control-label" v-text="$t('ppApp.taskWatcherDefinition.watcher')" for="task-watcher-definition-watcher"
                 >Watcher</label
               >

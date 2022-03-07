@@ -18,6 +18,7 @@ public interface TaskWatcherDefinitionMapper {
 
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
+    @Mapping(target = "shouldReceiveNotification", source = "shouldReceiveNotification")
     @Mapping(target = "watcher", source = "watcher")
     SuitDTO toSuitDTO(Suit suit);
 

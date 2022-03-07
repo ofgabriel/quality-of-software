@@ -18,6 +18,7 @@
         "title": "Task Watcher Definition"
       },
       "id": "ID",
+      "shouldReceiveNotification": "Should Receive Notification",
       "watcher": "Watcher"
     }
   }

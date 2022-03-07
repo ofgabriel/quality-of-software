@@ -55,6 +55,12 @@
             <span>{{ suit.shouldGroup }}</span>
           </dd>
           <dt>
+            <span v-text="$t('ppApp.suit.shouldReceiveNotification')">Should Receive Notification</span>
+          </dt>
+          <dd>
+            <span>{{ suit.shouldReceiveNotification }}</span>
+          </dd>
+          <dt>
             <span v-text="$t('ppApp.suit.watcher')">Watcher</span>
           </dt>
           <dd>

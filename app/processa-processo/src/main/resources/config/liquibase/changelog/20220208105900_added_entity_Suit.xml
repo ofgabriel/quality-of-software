@@ -38,6 +38,9 @@
             <column name="should_group" type="boolean">
                 <constraints nullable="true" />
             </column>
+            <column name="should_receive_notification" type="boolean">
+                <constraints nullable="true" />
+            </column>
             <column name="watcher_id" type="bigint">
                 <constraints nullable="true" />
             </column>

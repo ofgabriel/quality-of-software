@@ -11,6 +11,7 @@ export interface ISuit {
   court?: string | null;
   value?: string | null;
   shouldGroup?: boolean | null;
+  shouldReceiveNotification?: boolean | null;
   watcher?: ILawyer | null;
   group?: IGroup | null;
 }
@@ -26,9 +27,11 @@ export class Suit implements ISuit {
     public court?: string | null,
     public value?: string | null,
     public shouldGroup?: boolean | null,
+    public shouldReceiveNotification?: boolean | null,
     public watcher?: ILawyer | null,
     public group?: IGroup | null
   ) {
     this.shouldGroup = this.shouldGroup ?? false;
+    this.shouldReceiveNotification = this.shouldReceiveNotification ?? false;
   }
 }
